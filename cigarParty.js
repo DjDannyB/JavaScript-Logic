@@ -13,13 +13,11 @@ function cigarParty(cigars, isWeekend) {
    if (cigars >= 40 && cigars <= 60 && !isWeekend){
     return true
    }
-   if (cigars >=40 && cigars > 60 && isWeekend){
+   if (cigars >= 40 && isWeekend){
     return true
    }
    return false
-console.log(cigars, isWeekend);
 }
-// console.log(cigarParty(30, false));
-
-cigarParty(30, false)
-
+console.log(cigarParty(30, false));
+console.log(cigarParty(50, false));
+console.log(cigarParty(70, true));
